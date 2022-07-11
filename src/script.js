@@ -1,7 +1,7 @@
 const searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", function () {
   const input = document.querySelector(".input-key");
-  fetch(`http://www.omdbapi.com/?apikey=3ecc60a&s=${input.value}`)
+  fetch(`https://www.omdbapi.com/?apikey=3ecc60a&s=${input.value}`)
     .then((res) => res.json())
     .then((result) => {
       const movie = result.Search;
@@ -14,7 +14,7 @@ searchButton.addEventListener("click", function () {
       detailButton.forEach((btn) => {
         btn.addEventListener("click", function () {
           const id = this.getAttribute("data-id");
-          fetch(`http://www.omdbapi.com/?apikey=3ecc60a&i=${id}`)
+          fetch(`https://www.omdbapi.com/?apikey=3ecc60a&i=${id}`)
             .then((res) => res.json())
             .then((m) => {
               const movieDetail = DetailMovie(m);
