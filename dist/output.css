@@ -636,6 +636,11 @@ input[type=file]::file-selector-button:hover {
 .dark input[type=file]::-webkit-file-upload-button:hover {
   background: #6B7280;
 }
+.text-movie {
+  color: #ffffff;
+  text-align: center;
+  padding: 0.5rem;
+}
 
 .dark input[type=file]::file-selector-button:hover {
   background: #6B7280;
