@@ -26,6 +26,13 @@ searchButton.addEventListener("click", function () {
     });
 });
 
+document.querySelector(".search-bar").addEventListener("keyup", function (e) {
+  if (e.keyCode === 13) {
+    searchButton.click();
+  }
+});
+
+
 function Showcard(m) {
   return `       <div class="col-md-4 my-5">
   <div
